@@ -274,8 +274,14 @@ footer{
         grid-template-columns: repeat(1,1fr);
     }
     .box{
-        width: 90%;
-        margin: 0 auto;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+        .box-content{
+        text-align: start;
+        margin-top: 10px;
     }
     .feature-title{
         font-size: 20px;
