@@ -36,9 +36,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-
 }
 
 .menu-part {
@@ -98,8 +95,59 @@
     background-size: cover;
 }
 
+/* main part */
+/* company style */
+.company {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+    border: 1px solid #787885;
+    padding: 20px;
+}
+/* collection products */
+.collection{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+.title{
+    text-align: center;
+    font-size: 28px;
+    color: #3A3A3A;
+    font-weight: 600px;
+    margin-bottom: 50px;
+}
+.box-title{
+    font-size: 28px;
+    color: #3A3A3A;
+    font-weight: 600px;
+}
+.price{
+    font-size: 24px;
+}
+.star{
+    color: #FB8200;
+}
+span{
+    font-weight: 700;
+    color: #5E6366;
+    margin-left: 10px;
+}
+.collection-boxs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.box{
+    box-shadow: 5px 5px 50px 5px rgb(222, 221, 221);
+    padding: 20px;
+    border-radius: 5px;
 
-
+}
 
 /* this is resposive style */
 @media screen and (max-width: 576px) {
@@ -132,13 +180,43 @@
         width: 202px;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 28px;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
     }
 
+    /* nain part */
+    /* company */
+    .company {
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    
+    .company img {
+        width: 33.381px;
+        height: 18.838px;
+        margin: auto;
+    }
+    
+    /* collection */
+    .collection{
+        width: 100%;
+    }
+    .collection-boxs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -165,4 +243,15 @@
     .banner-img img {
         width: 500px;
     }
+       /* nain part */
+    /* company */
+    .company {
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 80%;
+        text-align: center;
+    }
+
 }
