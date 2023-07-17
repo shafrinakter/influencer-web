@@ -148,6 +148,66 @@ span{
     border-radius: 5px;
 
 }
+.collection-btn{
+    color: #E02C6D;
+}
+.button{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+/* featured style */
+.featured{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    gap: 50px;
+    padding-top: 60px;
+    align-items: center;
+
+}
+.feature-title{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    
+}
+.fea-description{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+/* footer style */
+footer{
+    background: #0A0826;
+    height: 60vh;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    color: white;
+    text-align: center;
+}
+.footer-title{
+    padding-bottom:20px ;
+    font-size: 24px;
+}
+.footer-descripton{
+    padding-bottom: 20px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+}
 
 /* this is resposive style */
 @media screen and (max-width: 576px) {
@@ -214,8 +274,28 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
     .box{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
+    }
+    .feature-title{
+        font-size: 20px;
+        
+    }
+    .fea-description{
+        width: 100%;
+    }
+    .featured{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .fea-img{
+        width: 80%;
+    }
+    footer{
+        height: 40vh;
     }
 }
 
@@ -253,5 +333,27 @@ span{
         width: 80%;
         text-align: center;
     }
+        /* collection */
+        .collection{
+            width: 100%;
+            padding: 20px;
+        }
+        .collection-boxs{
+            grid-template-columns: repeat(2,1fr);
+            gap: 10;
+        }
+        .box{
+            width: 350px;
+        }
+        .featured{
+            padding: 20px;
+            width: 100%;
+        }
+        .feature-title{
+            font-size: 20px;
+        }
+        .fea-description{
+            width: 100%;
+        }
 
 }
